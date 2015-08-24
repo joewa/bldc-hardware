@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "BLDC Driver 4.6"
 Date "25 Aug 2014"
 Rev "4.6"
@@ -381,7 +381,7 @@ Text Label 1450 5650 0    40   ~ 0
 TX_SDA
 Text Label 1450 5550 0    40   ~ 0
 ADC_EXT
-Text Notes 1150 1250 0    340  ~ 68
+Text Notes 1050 1150 0    340  ~ 68
 BLDC motor controller
 $Bitmap
 Pos 10700 3200
@@ -5123,4 +5123,28 @@ F 3 "" H 9100 1500 60  0001 C CNN
 $EndComp
 Text Notes 9150 4900 0    60   ~ 0
 Connect signal ground and\npower ground in one place only
+$Comp
+L IRS2184 U?
+U 1 1 55DB3300
+P 7550 1350
+F 0 "U?" H 7550 1650 60  0000 C CNN
+F 1 "IRS2184" H 7550 1050 60  0000 C CNN
+F 2 "" H 7550 1350 60  0000 C CNN
+F 3 "" H 7550 1350 60  0000 C CNN
+	1    7550 1350
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8400 5300 1250 1100
+U 55DB7E47
+F0 "Half Bridge Driver A" 60
+F1 "half_bridge_insd.sch" 60
+F2 "HO" O R 9650 5550 60 
+F3 "LO" O R 9650 6150 60 
+F4 "VS" I R 9650 5850 60 
+F5 "DRV_VCC" I L 8400 5400 60 
+F6 "DRV_IN" I L 8400 5700 60 
+F7 "DRV_SD" I L 8400 6000 60 
+F8 "PGND" I L 8400 6300 60 
+$EndSheet
 $EndSCHEMATC
