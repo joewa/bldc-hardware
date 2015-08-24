@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 10
 Title "BLDC Driver 4.6"
 Date "25 Aug 2014"
 Rev "4.6"
@@ -328,8 +328,6 @@ F 3 "" H 7950 3100 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 7000 3300
-NoConn ~ 4500 2050
-NoConn ~ 4500 4650
 NoConn ~ 4500 4850
 $Comp
 L CONN_6 P2
@@ -498,11 +496,11 @@ Text HLabel 4500 2950 0    60   BiDi ~ 0
 USB_DP
 Text HLabel 4500 3350 0    60   Output ~ 0
 SERVO
-Text HLabel 4500 3450 0    60   Input ~ 0
+Text HLabel 4500 5750 0    60   Input ~ 0
 HALL_1
-Text HLabel 4500 3550 0    60   Input ~ 0
-HALL_2
 Text HLabel 4500 5650 0    60   Input ~ 0
+HALL_2
+Text HLabel 4500 5550 0    60   Input ~ 0
 HALL_3
 Text HLabel 4500 3850 0    60   Output ~ 0
 RX_SCL
@@ -522,8 +520,6 @@ Text HLabel 4500 5150 0    60   3State ~ 0
 TX_SDA
 Text HLabel 4500 5250 0    60   Output ~ 0
 RX_SCL
-Text HLabel 4500 5750 0    60   Input ~ 0
-FAULT
 Text HLabel 4500 2550 0    60   Output ~ 0
 H3
 Text HLabel 4500 2650 0    60   Output ~ 0
@@ -537,13 +533,11 @@ SENS2
 Text HLabel 4500 1950 0    60   Input ~ 0
 SENS1
 Text HLabel 4500 2350 0    60   Input ~ 0
-BR_SO1
+CURR1
 Text HLabel 4500 2250 0    60   Input ~ 0
-BR_SO2
+CURR2
 Text HLabel 4500 4750 0    60   Input ~ 0
 AN_IN
-Text HLabel 4500 5550 0    60   Output ~ 0
-EN_GATE
 Text HLabel 4500 4050 0    60   Input ~ 0
 DC_CAL
 Wire Notes Line
@@ -4435,6 +4429,14 @@ F 3 "" H 7750 2150 60  0001 C CNN
 	1    7750 2150
 	1    0    0    -1  
 $EndComp
-Text HLabel 4500 2150 0    60   Input ~ 0
+Text HLabel 4500 4650 0    60   Input ~ 0
 ADC_TEMP
+Text HLabel 4500 2050 0    60   Input ~ 0
+SENSY
+Text HLabel 4500 2150 0    60   Input ~ 0
+CURR3
+Text HLabel 4500 3450 0    60   Output ~ 0
+USART1_TX
+Text HLabel 4500 3550 0    60   Input ~ 0
+USART1_RX
 $EndSCHEMATC
