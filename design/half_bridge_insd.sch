@@ -36,12 +36,12 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
-Title ""
-Date ""
-Rev ""
+Sheet 6 11
+Title "3-Phase Universal Driver"
+Date "2015-08-27"
+Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "Half bridge driver"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -53,6 +53,7 @@ P 5450 3400
 AR Path="/55DB7E47/55DDD5BF" Ref="U?"  Part="1" 
 AR Path="/55E59DEF/55DDD5BF" Ref="U?"  Part="1" 
 AR Path="/55E6829E/55DDD5BF" Ref="U?"  Part="1" 
+AR Path="/55E631D7/55DDD5BF" Ref="U?"  Part="1" 
 F 0 "U?" H 5450 3700 60  0000 C CNN
 F 1 "IRS2184" H 5450 3100 60  0000 C CNN
 F 2 "" H 5450 3400 60  0000 C CNN
@@ -60,11 +61,11 @@ F 3 "" H 5450 3400 60  0000 C CNN
 	1    5450 3400
 	1    0    0    -1  
 $EndComp
-Text HLabel 6650 3300 2    60   Output ~ 0
+Text HLabel 6850 3300 2    60   Output ~ 0
 HO
-Text HLabel 6650 3600 2    60   Output ~ 0
+Text HLabel 6850 3600 2    60   Output ~ 0
 LO
-Text HLabel 6650 3450 2    60   Input ~ 0
+Text HLabel 6850 3450 2    60   Input ~ 0
 VS
 Text HLabel 3950 3200 0    60   Input ~ 0
 DRV_VCC
@@ -81,6 +82,7 @@ P 5150 2800
 AR Path="/55DB7E47/55DE445F" Ref="D?"  Part="1" 
 AR Path="/55E59DEF/55DE445F" Ref="D?"  Part="1" 
 AR Path="/55E6829E/55DE445F" Ref="D?"  Part="1" 
+AR Path="/55E631D7/55DE445F" Ref="D?"  Part="1" 
 F 0 "D?" H 5150 2900 50  0000 C CNN
 F 1 "D_Schottky" H 5150 2700 50  0000 C CNN
 F 2 "" H 5150 2800 60  0000 C CNN
@@ -95,6 +97,7 @@ P 4350 3350
 AR Path="/55DB7E47/55DF8324" Ref="R?"  Part="1" 
 AR Path="/55E59DEF/55DF8324" Ref="R?"  Part="1" 
 AR Path="/55E6829E/55DF8324" Ref="R?"  Part="1" 
+AR Path="/55E631D7/55DF8324" Ref="R?"  Part="1" 
 F 0 "R?" V 4430 3350 50  0000 C CNN
 F 1 "1k" V 4350 3350 50  0000 C CNN
 F 2 "" V 4280 3350 30  0000 C CNN
@@ -109,6 +112,7 @@ P 5600 2800
 AR Path="/55DB7E47/55DF8357" Ref="Rschottky?"  Part="1" 
 AR Path="/55E59DEF/55DF8357" Ref="Rschottky?"  Part="1" 
 AR Path="/55E6829E/55DF8357" Ref="Rschottky?"  Part="1" 
+AR Path="/55E631D7/55DF8357" Ref="Rschottky?"  Part="1" 
 F 0 "Rschottky?" V 5680 2800 50  0000 C CNN
 F 1 "2.7" V 5600 2800 50  0000 C CNN
 F 2 "" V 5530 2800 30  0000 C CNN
@@ -123,6 +127,7 @@ P 4700 3450
 AR Path="/55DB7E47/55DF8392" Ref="R?"  Part="1" 
 AR Path="/55E59DEF/55DF8392" Ref="R?"  Part="1" 
 AR Path="/55E6829E/55DF8392" Ref="R?"  Part="1" 
+AR Path="/55E631D7/55DF8392" Ref="R?"  Part="1" 
 F 0 "R?" V 4780 3450 50  0000 C CNN
 F 1 "1k" V 4700 3450 50  0000 C CNN
 F 2 "" V 4630 3450 30  0000 C CNN
@@ -133,29 +138,31 @@ $EndComp
 $Comp
 L R Rgate?
 U 1 1 55DF83B9
-P 6400 3300
+P 6500 3300
 AR Path="/55DB7E47/55DF83B9" Ref="Rgate?"  Part="1" 
 AR Path="/55E59DEF/55DF83B9" Ref="Rgate?"  Part="1" 
 AR Path="/55E6829E/55DF83B9" Ref="Rgate?"  Part="1" 
-F 0 "Rgate?" V 6480 3300 50  0000 C CNN
-F 1 "4.7" V 6400 3300 50  0000 C CNN
-F 2 "" V 6330 3300 30  0000 C CNN
-F 3 "" H 6400 3300 30  0000 C CNN
-	1    6400 3300
+AR Path="/55E631D7/55DF83B9" Ref="Rgate?"  Part="1" 
+F 0 "Rgate?" V 6580 3300 50  0000 C CNN
+F 1 "4.7" V 6500 3300 50  0000 C CNN
+F 2 "" V 6430 3300 30  0000 C CNN
+F 3 "" H 6500 3300 30  0000 C CNN
+	1    6500 3300
 	0    1    1    0   
 $EndComp
 $Comp
 L R Rgate?
 U 1 1 55DF843E
-P 6400 3600
+P 6500 3600
 AR Path="/55DB7E47/55DF843E" Ref="Rgate?"  Part="1" 
 AR Path="/55E59DEF/55DF843E" Ref="Rgate?"  Part="1" 
 AR Path="/55E6829E/55DF843E" Ref="Rgate?"  Part="1" 
-F 0 "Rgate?" V 6480 3600 50  0000 C CNN
-F 1 "4.7" V 6400 3600 50  0000 C CNN
-F 2 "" V 6330 3600 30  0000 C CNN
-F 3 "" H 6400 3600 30  0000 C CNN
-	1    6400 3600
+AR Path="/55E631D7/55DF843E" Ref="Rgate?"  Part="1" 
+F 0 "Rgate?" V 6580 3600 50  0000 C CNN
+F 1 "4.7" V 6500 3600 50  0000 C CNN
+F 2 "" V 6430 3600 30  0000 C CNN
+F 3 "" H 6500 3600 30  0000 C CNN
+	1    6500 3600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -173,8 +180,9 @@ P 6100 2950
 AR Path="/55DB7E47/55DF8D4F" Ref="C?"  Part="1" 
 AR Path="/55E59DEF/55DF8D4F" Ref="C?"  Part="1" 
 AR Path="/55E6829E/55DF8D4F" Ref="C?"  Part="1" 
+AR Path="/55E631D7/55DF8D4F" Ref="C?"  Part="1" 
 F 0 "C?" H 6125 3050 50  0000 L CNN
-F 1 "0.47uF" H 6125 2850 50  0000 L CNN
+F 1 "1uF" H 6125 2850 50  0000 L CNN
 F 2 "" H 6138 2800 30  0000 C CNN
 F 3 "" H 6100 2950 60  0000 C CNN
 	1    6100 2950
@@ -187,8 +195,9 @@ P 4900 3900
 AR Path="/55DB7E47/55DF8D84" Ref="C?"  Part="1" 
 AR Path="/55E59DEF/55DF8D84" Ref="C?"  Part="1" 
 AR Path="/55E6829E/55DF8D84" Ref="C?"  Part="1" 
+AR Path="/55E631D7/55DF8D84" Ref="C?"  Part="1" 
 F 0 "C?" H 4925 4000 50  0000 L CNN
-F 1 "100nF" H 4925 3800 50  0000 L CNN
+F 1 "0.47uF" H 4925 3800 50  0000 L CNN
 F 2 "" H 4938 3750 30  0000 C CNN
 F 3 "" H 4900 3900 60  0000 C CNN
 	1    4900 3900
@@ -209,19 +218,15 @@ Wire Wire Line
 	5850 3200 5850 2800
 Connection ~ 5850 2800
 Wire Wire Line
-	5850 3450 6650 3450
+	5850 3450 6850 3450
 Wire Wire Line
 	6100 3100 6100 3650
 Wire Wire Line
-	5850 3300 6250 3300
+	5850 3300 6350 3300
 Wire Wire Line
-	6550 3300 6650 3300
-Wire Wire Line
-	5850 3600 6250 3600
-Wire Wire Line
-	6550 3600 6650 3600
+	5850 3600 6350 3600
 Connection ~ 6100 3450
-Text HLabel 6650 4000 2    60   Output ~ 0
+Text HLabel 6850 4000 2    60   Output ~ 0
 V_SENSE
 $Comp
 L R Rhsense?
@@ -230,6 +235,7 @@ P 6100 3800
 AR Path="/55DB7E47/55E0598B" Ref="Rhsense?"  Part="1" 
 AR Path="/55E59DEF/55E0598B" Ref="Rhsense?"  Part="1" 
 AR Path="/55E6829E/55E0598B" Ref="Rhsense?"  Part="1" 
+AR Path="/55E631D7/55E0598B" Ref="Rhsense?"  Part="1" 
 F 0 "Rhsense?" V 6180 3800 50  0000 C CNN
 F 1 "R" V 6100 3800 50  0000 C CNN
 F 2 "" V 6030 3800 30  0000 C CNN
@@ -244,6 +250,7 @@ P 6100 4200
 AR Path="/55DB7E47/55E05BEF" Ref="Rlsense?"  Part="1" 
 AR Path="/55E59DEF/55E05BEF" Ref="Rlsense?"  Part="1" 
 AR Path="/55E6829E/55E05BEF" Ref="Rlsense?"  Part="1" 
+AR Path="/55E631D7/55E05BEF" Ref="Rlsense?"  Part="1" 
 F 0 "Rlsense?" V 6180 4200 50  0000 C CNN
 F 1 "R" V 6100 4200 50  0000 C CNN
 F 2 "" V 6030 4200 30  0000 C CNN
@@ -262,6 +269,52 @@ Connection ~ 5050 4350
 Wire Wire Line
 	6100 4050 6100 3950
 Wire Wire Line
-	6650 4000 6100 4000
+	6100 4000 6850 4000
 Connection ~ 6100 4000
+$Comp
+L D Dgate?
+U 1 1 55E9685F
+P 6500 3100
+F 0 "Dgate?" H 6500 3200 50  0000 C CNN
+F 1 "D" H 6500 3000 50  0000 C CNN
+F 2 "" H 6500 3100 60  0000 C CNN
+F 3 "" H 6500 3100 60  0000 C CNN
+	1    6500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3100 6300 3100
+Wire Wire Line
+	6300 3100 6300 3300
+Connection ~ 6300 3300
+$Comp
+L D Dgate?
+U 1 1 55E96991
+P 6500 3850
+F 0 "Dgate?" H 6500 3950 50  0000 C CNN
+F 1 "D" H 6500 3750 50  0000 C CNN
+F 2 "" H 6500 3850 60  0000 C CNN
+F 3 "" H 6500 3850 60  0000 C CNN
+	1    6500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3300 6850 3300
+Wire Wire Line
+	6650 3100 6700 3100
+Wire Wire Line
+	6700 3100 6700 3300
+Connection ~ 6700 3300
+Wire Wire Line
+	6650 3600 6850 3600
+Wire Wire Line
+	6650 3850 6700 3850
+Wire Wire Line
+	6700 3850 6700 3600
+Connection ~ 6700 3600
+Wire Wire Line
+	6350 3850 6300 3850
+Wire Wire Line
+	6300 3850 6300 3600
+Connection ~ 6300 3600
 $EndSCHEMATC
