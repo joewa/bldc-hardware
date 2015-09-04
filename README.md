@@ -1,6 +1,8 @@
 bldc-hardware
 =============
 
+[![Join the chat at https://gitter.im/joewa/bldc-hardware](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/joewa/bldc-hardware?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This the Hardware for my open source custom ESC. This is a forked repository from mrkindustries, who made many improvements to my original hardware design.
 
 Here is a BOM on google drive that I try to keep up to date:
