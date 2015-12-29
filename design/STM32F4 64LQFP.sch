@@ -4452,4 +4452,6 @@ Wire Wire Line
 	8500 5050 8500 5150
 Wire Wire Line
 	8500 5150 8400 5150
+Text Notes 10500 3450 0    60   ~ 0
+Lisa/S Connector\nPin1: TMS/SWDIO\nPin2: GND\nPin3: TCK/SWCLK\nPin4: TDO/TRACESWO\nPin5: NRST\nStecker\n5-Pin 0.05" Pitch Pin Header
 $EndSCHEMATC
